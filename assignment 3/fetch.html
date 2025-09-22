@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <button id="btn">Get Data In Table</button>
+
+    <script>
+      document.getElementById("btn").addEventListener("click", async () => {
+        let response = await fetch("https://dummyjson.com/todos");
+        let data = await response.json();
+
+        let table = document.createElement("table");
+        table.setAttribute("border", "1");
+
+        let headerRow = document.createElement("tr");
+        let keys = Object.keys(data.todos[0]);
+        for (let k of keys) {
+          let th = document.createElement("th");
+          th.textContent = k.toUpperCase();
+          headerRow.appendChild(th);
+        }
+        table.appendChild(headerRow);
+
+        for (let item of data.todos) {
+          let row = document.createElement("tr");
+          for (let k of keys) {
+            let td = document.createElement("td");
+            let value = item[k];
+            if (value === true) value = "Completed";
+            if (value === false) value = "Not Completed";
+            td.textContent = value;
+            row.appendChild(td);
+          }
+          table.appendChild(row);
+        }
+
+        document.body.appendChild(table);
+      });
+    </script>
+  </body>
+</html>
