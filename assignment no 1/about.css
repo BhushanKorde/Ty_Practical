@@ -1,0 +1,139 @@
+
+
+body{
+    font-family: Roboto,Arial;
+    background-color: rgb(247, 247, 247);
+    }
+
+.header{
+        height: 100px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(230, 230, 230);
+    }
+
+    
+
+    .ul-nav{
+        display:flex;
+        flex-direction: row;
+        list-style: none;
+        column-gap: 50px;
+        margin-right: 190px;
+    }
+
+    .input{
+        border-radius: 30px;
+        border:1px solid;
+        padding-left: 20px;
+        height: 29px;
+        width: 500px;
+    }
+
+
+    .logo{
+        height: 30px;
+        width: 100px;
+        object-fit: cover;
+    }
+
+    .home{
+        text-decoration: none;
+        color:black;
+    }
+
+.div-map{
+        margin-left: 50px;
+        margin-right: 50px;
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .map{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    
+
+
+    .back{
+    background-image: url('iqoo-network-img1.png');
+    height:auto;
+    max-width: 100%;
+    background-size: cover;
+    
+    }
+
+
+    .try{
+        margin-top: 0px;
+        margin-bottom: 50px;
+
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .h1{
+        height: auto;
+        padding-top: 60px;
+        text-align: center;
+        max-width:300px;
+        margin-left: 570px;
+    }
+
+    .h3{
+    height: auto;
+    padding-top: 60px;
+    text-align: center;
+    max-width: 300px;
+    margin-left: 570px;
+    }
+
+    .h4{
+        height: auto;
+        padding-top: 10px;
+        margin-left: 100px;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .h5{
+        height: auto;
+        padding-top: 10px;
+        margin-left: 800px;
+        margin-top: -130px;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .h6{
+        height: auto;
+        padding-top: 15px;
+        margin-left: 100px;
+        max-width: 900px;
+        margin-left: 200px;
+        text-align: center;
+    }
+
+    span{
+        color:rgb(253, 180, 0)
+    }
+
+
+    .footer {
+  background-color:rgb(253, 180, 0);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}

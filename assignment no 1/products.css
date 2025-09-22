@@ -1,0 +1,195 @@
+body{
+    font-family: Roboto,Arial;
+    background-color: rgb(247, 247, 247);
+}
+
+.header{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.ul-nav{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 50px;
+    margin-right: 190px;
+}
+
+.input{
+    border-radius: 30px;
+    border:1px solid;
+    padding-left: 20px;
+    height: 29px;
+    width: 500px;
+}
+
+.logo{
+    height: 30px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.home{
+    text-decoration: none;
+    color:black;
+}
+
+span{
+    color:rgb(253, 180, 0)
+}
+
+.h1{
+    text-align: center;
+    font-size: 50px
+}
+
+.layout{
+    height:650px;
+    width: 1000px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0,0.15);
+    margin-left: 250px;
+    margin-right: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.z{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.b1{
+    background-color: black ;
+    color: white;
+    margin-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+}
+
+.b1:hover{
+    transition: opacity 1s;
+    opacity: 0.8;
+}
+
+.b1:active{
+    opacity: 0.4;
+}
+
+.footer {
+    background-color:rgb(253, 180, 0);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+@media (max-width: 1200px) {
+    .ul-nav {
+        column-gap: 30px;
+        margin-right: 80px;
+    }
+    .input {
+        width: 350px;
+    }
+    .layout {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        padding: 40px 20px;
+    }
+    .h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+    .ul-nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0 0 0;
+        column-gap: 0;
+        row-gap: 12px;
+    }
+    .input {
+        width: 85%;
+        margin: 12px 0;
+    }
+    .layout {
+        width: 95%;
+        margin: 40px auto;
+        padding: 30px 15px;
+    }
+    .h1 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 10px;
+    }
+    .logo {
+        width: 80px;
+        height: 25px;
+    }
+    .input {
+        width: 100%;
+        font-size: 14px;
+    }
+    .layout {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px 10px;
+    }
+    .h1 {
+        font-size: 26px;
+    }
+    .b1 {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    .ul-nav {
+        row-gap: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .h1 {
+        font-size: 20px;
+    }
+    .input {
+        font-size: 12px;
+        padding-left: 12px;
+    }
+    .b1 {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .layout {
+        padding: 15px 8px;
+    }
+}

@@ -1,0 +1,168 @@
+
+
+body {
+    font-family: Roboto, Arial;
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.ul-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.input {
+    border-radius: 30px;
+    border: 1px solid;
+    padding-left: 20px;
+    height: 29px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.logo {
+    height: auto;
+    width: 100%;
+    max-width: 100px;
+    object-fit: cover;
+}
+
+.home {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.h {
+    margin: 50px;
+}
+
+.ex {
+    height: 100%;
+    width: 100%;
+}
+
+.ex:hover {
+    transition: transform 0.5s;
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+span {
+    color: rgb(253, 180, 0);
+}
+
+.footer {
+    background-color: rgb(253, 180, 0);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.dis {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 90px;
+}
+
+.div-dis {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.div-dis:hover {
+    transform: scale(1.05);
+}
+
+.div-dis img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.d {
+    font-size: 80px;
+    text-align: center;
+}
+
+.cover {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.4s;
+}
+
+.cover:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .ul-nav {
+        flex-direction: column;
+        align-items: center;
+        column-gap: 0;
+        row-gap: 10px;
+    }
+
+    .d {
+        font-size: 40px;
+    }
+
+    .input {
+        width: 90%;
+    }
+
+    .cover {
+        width: 90%;
+    }
+
+    .dis {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .div-dis img {
+        max-width: 90%;
+    }
+}
+
+
